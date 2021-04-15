@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	
+}
+nav ul{
+	list-style: none;
+	
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	display: grid;
+	
+}
+nav ul li{
+	text-align: center;
+}
+nav ul li a{
+	display: block;
+	line-height: 100px;
+	text-decoration: none;
+	background-color: lightblue;
+	
+}
+nav ul li a:hover{
+	background-color: rgb(34, 159, 227);
+}
+footer{
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	display: grid;
+
+}
