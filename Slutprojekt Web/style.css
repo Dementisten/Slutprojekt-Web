@@ -20,19 +20,20 @@ nav ul li a{
 	background-color: lightblue;
 	color: black;	
 	font-weight: 600;
+	font-size: 2em;
 }
 nav ul li a:hover{
 	background-color: cornflowerblue;
 }
 .aktiv{
-	font-size: 2em;
+	font-size: 4em;
 }
-main{
+/*main{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 60px 1fr 1fr;
 	height: 85vh;
-}
+}*/
 ul li a{
 	display: block;
 	line-height: 60px;
@@ -51,6 +52,11 @@ main ul{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	background-color: cornflowerblue;
+}
+#3spalt{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 60px 1fr;
 }
 footer{
 	padding: auto;
