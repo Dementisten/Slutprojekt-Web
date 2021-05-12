@@ -28,12 +28,6 @@ nav ul li a:hover{
 .aktiv{
 	font-size: 4em;
 }
-/*main{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 60px 1fr 1fr;
-	height: 85vh;
-}*/
 ul li a{
 	display: block;
 	line-height: 60px;
@@ -52,14 +46,55 @@ main ul{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	background-color: cornflowerblue;
+	grid-area: ul;
 }
-#3spalt{
+main p{
+	background-image: linear-gradient(to bottom right, rgb(142, 159, 255), rgb(156, 156, 156));
+	margin: 50px;
+	padding: 50px;
+	border: 2px solid black;
+	border-radius: 50px;
+}
+main img{
+	height: 500px;
+	width: 500px;
+}
+main form{
+	padding: 50px;
+}
+#TreSpalt{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 60px 1fr;
+	grid-template-areas: 
+	"ul ul ul"
+	"main main main";
+}
+#TvåSpalt{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 60px 1fr;
+	grid-template-areas: 
+	"ul ul"
+	"main main";
+}
+#TvåSpalter{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"main main";
+}
+table, th, td{
+	margin: 50px;
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+tr:nth-child(odd){
+	background-color: silver;
 }
 footer{
-	padding: auto;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	display: grid;
@@ -71,8 +106,20 @@ footer{
 	background-color: cornflowerblue;
 	font-weight: 600;
 }
-footer a{
+footer > a{
 	text-decoration: none;
 	color: black;
 	
+}
+footer a:hover{
+	color:rgb(98, 96, 236);
+}
+footer a:active{
+	color: red;
+}
+footer a:focus{
+	color: blue;
+}
+footer a:visited{
+	color: white;
 }
