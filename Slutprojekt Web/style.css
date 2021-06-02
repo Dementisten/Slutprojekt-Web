@@ -1,17 +1,18 @@
-*{
-	margin: 0;
-	padding: 0;
-}
+
 nav ul{
-	list-style: none;
-	
+	/*List style none tar bort pricken som normalt är på listor*/
+	list-style-type: none;
+	/*Anger hur griddet ska vara*/
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	height: 10vh;
+	/*Gör så att griddet blir synligt*/
 	display: grid;
-	
+	/*Tar bort onödigt mellanrum*/
+	padding: 0;
 }
 nav ul li{
+	/*Centrerar texten i mitten av rutan*/
 	text-align: center;
 }
 nav ul li a{
@@ -19,10 +20,12 @@ nav ul li a{
 	text-decoration: none;
 	background-color: lightblue;
 	color: black;	
+	/*Gör fonten tjock*/
 	font-weight: 600;
-	font-size: 2em;
+	font-size: 4ex;
 }
 nav ul li a:hover{
+	/*Ändrar bakgrundsfärgen*/
 	background-color: cornflowerblue;
 }
 .aktiv{
@@ -36,6 +39,7 @@ ul li a{
 	color: black;
 }
 ul li :hover{
+	/*Ändrar färgen när man håller musen över*/
 	background-color: rgb(98, 96, 236);
 }
 ul li{
@@ -47,8 +51,11 @@ main ul{
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	background-color: cornflowerblue;
 	grid-area: ul;
+	padding: 0;
+	margin: 0;
 }
 main p{
+	/*En gradient mellan blått till grått från längst upp vänster till längst ner höger*/
 	background-image: linear-gradient(to bottom right, rgb(142, 159, 255), rgb(156, 156, 156));
 	margin: 50px;
 	padding: 50px;
@@ -56,16 +63,20 @@ main p{
 	border-radius: 50px;
 }
 main img{
+	/*Specificerar storleken på bilderna*/
 	height: 500px;
 	width: 500px;
 }
 main form{
+	/*Gör formet mer luftigt*/
 	padding: 50px;
 }
+/*ID selektor för layout*/
 #TreSpalt{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 60px 1fr;
+	/*Grid template areas säger hur element ska vara placerade i griddet*/
 	grid-template-areas: 
 	"ul ul ul"
 	"main main main";
@@ -85,12 +96,15 @@ main form{
 	grid-template-areas: 
 	"main main";
 }
+/*Selektor för table th och td*/
 table, th, td{
 	margin: 50px;
 	padding: 10px;
 	border: 1px solid black;
+	/*Slänger ihop borders för att det inte ska vara dubbla*/
 	border-collapse: collapse;
 }
+/*Pseudo selektor för varje ojämn tr*/
 tr:nth-child(odd){
 	background-color: silver;
 }
@@ -112,7 +126,7 @@ footer > a{
 	
 }
 footer a:hover{
-	color:rgb(98, 96, 236);
+	color:#000080;
 }
 footer a:active{
 	color: red;

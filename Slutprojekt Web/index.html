@@ -1,15 +1,30 @@
+<!--Doctype för att använda html5-->
 <!DOCTYPE html>
+<!--Bestämmer språket på sidan vid talsyntes-->
 <html lang="sv">
+<!--Head tag för allt som inte synns på sidan.-->
 <head>
+	<!--Bestämmer att utf-8 används som teckenkodning-->
 	<meta charset="utf-8">
+	<!--Titlen för tabben av sidan-->
 	<title>Ville Ekblad: Startsida</title>
+	<!--Kopplar ihop css filen-->
 	<link href="style.css" rel="stylesheet">
+	<!--Sluttag för head, alla taggar med </> är sluttaggar-->
 </head>
+<!--Body tag, för allt som syns på sidan-->
+<!--Class grid1 för layouten på huvudmenyn-->
 <body class="grid1">
+	<!--Semantisk header tag för att förenkla användningen av sidan med talsyteser och andra hjälpmedel-->
 	<header>
+		<!--Semantisk nav tag för navigationen-->
 		<nav>
+			<!--ul tag, unordered list för navigationen-->
 			<ul>
+				<!--li tag, list item för de enskilda knapparna-->
 				<li>
+					<!--a tag för att göra dem klickbara-->
+					<!--href för att säga vart dem leder-->
 					<a href="komponenter.html">Komponenter</a>
 				</li>
 				<li>
@@ -21,12 +36,18 @@
 			</ul>
 		</nav>
 	</header>
+	<!--Main tag för huvudinnehållet på sidan.-->
+	<!--ID på layout för att överskrida allt annat-->
 	<main id="TvåSpalter">
+		<!--Form starttagg som leder till tack.html. Metoden GET används-->
 		<form action="tack.html" method="GET">
+			<!--Label för text över svarsalternativen-->
 			<label for="fname">Förnamn:</label><br>
+			<!--Input för de olika input alternativen, type är den typen av svar det är.-->
 			<input type="text" id="fname" name="fname"><br>
 			<label for="lname">Efternamn:</label><br>
 			<input type="password" id="lname" name="lname">
+			<!--br för att allt inte ska hamna huller om buller.-->
 			<br>
 			<label>Lärde du dig någonting på sidan?</label> <br>
 			<input type="radio" id="yes" name="learn" value="yes">
@@ -41,11 +62,17 @@
 			<label for="internet">Internet</label><br>
 			<input type="checkbox" id="övrigt" name="learn" value="no">
 			<label for="övrigt">Övrigt</label><br>
-			
+			<br>
+			<label for="improvement">Vad kan förbättras på sidan?:</label>
+			<br>
+			<textarea id="improvement" name="improve">
+  			</textarea>
 
+			<!--Sumbit knapp för att skicka in formuläret. Ledet till actionen som skrevs i början-->
 			<input type="submit">
 		  </form>
 
+		  <!--En vanlig p tag för text-->
 		  <p>
 			  Välkommen till min sida.
 			  Målet är att du efter att ha klickat runt, ska ha en bättre förståelse om datorernas olika komponenter.
@@ -53,6 +80,7 @@
 			  Lycka till!
 		  </p>
 	</main>
+	<!--Semantisk footer tag-->
 	<footer>
 		<p>
 			Ville Ekblad
