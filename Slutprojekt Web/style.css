@@ -40,7 +40,7 @@ ul li a{
 }
 ul li :hover{
 	/*Ändrar färgen när man håller musen över*/
-	background-color: rgb(98, 96, 236);
+	background-color: hsl(241, 78%, 65%);
 }
 ul li{
 	list-style-type: none;
